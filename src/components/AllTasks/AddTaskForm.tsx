@@ -22,17 +22,17 @@ const AddTaskForm = () => {
 
     return (
         <form
-            className='flex items-center justify-between mt-[18px]'
+            className='flex md:flex-row flex-col  items-center justify-between mt-[18px]'
             onSubmit={addTaskFormSubmitHandler}
         >
             <input
-                className='flex-1 py-5 pl-3 placeholder:font-montserrat font-normal text-sm rounded-[12px] border border-solid border-[#BDBDBD] '
+                className='w-full md:w-min flex-1 py-5 pl-3 placeholder:font-montserrat font-normal text-sm rounded-[12px] border border-solid border-[#BDBDBD] '
                 type='text'
                 placeholder='add details'
                 ref={userInputRef}
             />
             <button
-                className='bg-[#2F80ED] text-white font-montserrat font-semibold text-sm px-8 py-5 rounded-[12px] ml-[25px]'
+                className='w-full md:w-min bg-[#2F80ED] text-white font-montserrat font-semibold text-sm px-8 py-5 rounded-[12px] md:ml-[25px] mt-2 md:mt-0'
                 type='submit'
             >
                 Add

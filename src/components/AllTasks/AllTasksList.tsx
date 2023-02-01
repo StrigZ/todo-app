@@ -50,7 +50,7 @@ const AllTasksList = () => {
             )}
             {todoState.activePage === 'Completed' && filteredList.length !== 0 && (
                 <button
-                    className='flex items-center justify-center font-montserrat font font-semibold text-xs text-white bg-[#EB5757] rounded-[4px] py-3 pl-8 pr-6  ml-auto'
+                    className='w-full md:w-fit flex items-center justify-center font-montserrat font font-semibold text-xs text-white bg-[#EB5757] rounded-[4px] py-3 pl-8 pr-6  ml-auto'
                     onClick={() => dispatch(removeAllCompletedTasks())}
                 >
                     <BsTrash className='w-2 h-2 mr-[5px]' />
