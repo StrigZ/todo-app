@@ -6,6 +6,7 @@ import { selectTodoState } from './store/todoSlice'
 
 function App() {
     const todoState = useSelector(selectTodoState)
+
     return (
         <>
             <Header />
